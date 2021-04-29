@@ -1,0 +1,1 @@
+https://my-json-server.typicode.com/Direct-Dev-Ru/MockDb/events
