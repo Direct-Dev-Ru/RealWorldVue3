@@ -1,13 +1,15 @@
 import axios from 'axios'
+import { config } from '@/config/config'
 
 const apiClient = axios.create({
-  baseURL: 'https://my-json-server.typicode.com/Direct-Dev-Ru/MockDb',
+  baseURL: config.apiBaseUrl, //'https://my-json-server.typicode.com/Direct-Dev-Ru/MockDb',
   withCredentials: false,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'
   }
 })
+
 
 export default {
   getEvents() {
